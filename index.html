@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Huzaifa Digital Hub — technology tips, health & fitness advice, education & learning resources, and finance & online earning guides by Muhammad Huzaifa.">
+  <meta name="keywords" content="Huzaifa Digital Hub, technology tips, health fitness, education learning, finance, online earning, Hasilpur Pakistan, digital marketing, canva design, social media management">
+  <title>Huzaifa Digital Hub</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>html { scroll-behavior: smooth; }</style>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Huzaifa Digital Hub",
+    "url":"https://HuzaifaDigitalHub.com"
+  }
+  </script>
+</head>
+
+<body class="font-sans min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 text-white">
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  });
+</script>
+
+<!-- Navigation -->
+<nav class="fixed w-full bg-white shadow z-50">
+  <div class="container mx-auto flex justify-between p-4 text-gray-800">
+    <a href="#home" class="font-bold text-lg">Huzaifa Digital Hub</a>
+    <div class="space-x-4">
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#services" class="hover:text-blue-600">Services</a>
+      <a href="#blog" class="hover:text-blue-600">Blog</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center px-4">
+  <div>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Huzaifa Digital Hub</h1>
+    <p class="mb-6">Your trusted source for tech, health & fitness, education, and online earning tips.</p>
+    <a href="#services" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold">Get Started</a>
+  </div>
+</section>
+
+<!-- Ad Placeholder -->
+<div class="container mx-auto py-6">
+  <div class="bg-gray-200 text-center py-10">[AdSense Ad Placeholder - 728x90]</div>
+</div>
+
+<!-- About Section -->
+<section id="about" class="container mx-auto py-16 px-4">
+  <div class="grid md:grid-cols-2 gap-8 items-center">
+    <div class="flex justify-center">
+      <img src="https://via.placeholder.com/500x400" alt="Muhammad Huzaifa" class="rounded-lg shadow-lg">
+    </div>
+    <div>
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-300 mb-4">
+        Hi, I'm <span class="font-semibold">Muhammad Huzaifa</span>, a passionate and skilled digital professional from 
+        <span class="font-semibold">Hasilpur, Punjab, Pakistan</span>. I specialize in helping individuals and businesses 
+        grow their online presence through creative and result-driven strategies.
+      </p>
+      <p class="text-gray-300 mb-6">
+        My expertise includes <span class="font-semibold">Digital Marketing</span>, 
+        <span class="font-semibold">Canva Designing</span>, and 
+        <span class="font-semibold">Social Media Management</span>. 
+        I believe in delivering high-quality services tailored to my clients' unique needs, 
+        ensuring their success in the digital world.
+      </p>
+      <a href="#services" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+        View My Services
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="bg-gray-50 text-gray-800 py-16 px-4">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">My Services</h2>
+    <p class="max-w-2xl mx-auto text-center text-gray-600 mb-12">
+      I offer professional digital solutions to help your brand grow online.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-6 bg-white shadow-lg rounded-lg text-center transform hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+        <div class="text-blue-600 text-5xl mb-4">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
+        <p class="text-gray-600 text-sm">Expert strategies to increase your online presence, attract targeted audiences, and boost your sales.</p>
+      </div>
+
+      <div class="p-6 bg-white shadow-lg rounded-lg text-center transform hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+        <div class="text-pink-500 text-5xl mb-4">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Canva Designing</h3>
+        <p class="text-gray-600 text-sm">Creative and professional designs for social media, ads, and presentations using Canva.</p>
+      </div>
+
+      <div class="p-6 bg-white shadow-lg rounded-lg text-center transform hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+        <div class="text-green-500 text-5xl mb-4">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Social Media Management</h3>
+        <p class="text-gray-600 text-sm">Complete management of your social media accounts with engaging content, scheduling, and analytics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-50 py-16 px-4 text-gray-800">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+    <p class="max-w-2xl mx-auto text-center text-gray-600 mb-12">
+      Have a project in mind or want to work together? Feel free to reach out to me.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <form action="sendmail.php" method="POST" class="space-y-4">
+          <input type="text" name="name" placeholder="Your Name" required class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <input type="email" name="email" placeholder="Your Email" required class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <textarea name="message" placeholder="Your Message" rows="5" required class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">Send Message</button>
+        </form>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mb-4">Get In Touch</h3>
+        <p class="text-gray-600 mb-4">I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+        <ul class="space-y-3">
+          <li class="flex items-center">
+            <i class="fas fa-envelope text-blue-600 text-xl w-6"></i>
+            <a class="ml-3 hover:underline" href="mailto:huzaifaabdullah509@gmail.com">huzaifaabdullah509@gmail.com</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-phone text-green-600 text-xl w-6"></i>
+            <a class="ml-3 hover:underline" href="tel:+923346877075">+92 334 6877075</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center p-6 bg-gray-100 text-gray-800">
+  <p>&copy; 2025 Huzaifa Digital Hub. All rights reserved.</p>
+  <p class="mt-2">
+    <a class="underline" href="privacy.html">Privacy Policy</a> | 
+    <a class="underline" href="terms.html">Terms & Conditions</a>
+  </p>
+</footer>
+
+</body>
+</html>
