@@ -19,14 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // SMTP server
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'your-email@gmail.com'; // Your Gmail
-        $mail->Password   = 'your-app-password'; // Gmail App Password (NOT normal password)
+        $mail->Username   = 'huzaifaabdullah509@gmail.com'; // Your Gmail
+        $mail->Password   = 'fcpa yrar fuys ufyt'; // Gmail App Password (NOT normal password)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // Email settings
         $mail->setFrom($email, $name);
-        $mail->addAddress('your-email@gmail.com', 'Huzaifa Digital Hub'); // Receiver email
+        $mail->addAddress('huzaifaabdullah509@gmail.com', 'Huzaifa Digital Hub'); // Receiver email
 
         $mail->isHTML(true);
         $mail->Subject = 'New Contact Form Message';
@@ -41,3 +41,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
