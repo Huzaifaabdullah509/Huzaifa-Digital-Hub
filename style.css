@@ -182,40 +182,106 @@ section p {
 ```
 
 /* Contact Form */
-form {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-  max-width: 600px;
-  margin: auto;
+/* Contact Section Styling */
+#contact {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
 }
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00d4ff;
 }
-form input:focus,
-form textarea:focus {
-  border-color: #2563eb;
-  outline: none;
+
+#contact p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #d9e6f2;
 }
-form button {
-  background: #2563eb;
-  color: #ebabab;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
+
+/* Contact Form Box */
+.contact-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
-form button:hover {
-  background: #1d4ed8;
+
+/* Form Inputs */
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
 }
+
+.contact-box input::placeholder,
+.contact-box textarea::placeholder {
+    color: #b0c4de;
+}
+
+/* Submit Button */
+.contact-box button {
+    background: linear-gradient(90deg, #00d4ff, #0077ff);
+    color: white;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-box button:hover {
+    background: linear-gradient(90deg, #0077ff, #00d4ff);
+    transform: translateY(-2px);
+}
+
+/* Get in Touch Info Section */
+.contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 6px 0;
+    color: #d9e6f2;
+    font-size: 1rem;
+}
+
+.contact-info a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2rem;
+    }
+    .contact-box {
+        padding: 20px;
+    }
+}
+
 
 /* Footer */
 footer {
@@ -245,4 +311,5 @@ footer a:hover {
     margin: 5px 0;
   }
 }
+
 
