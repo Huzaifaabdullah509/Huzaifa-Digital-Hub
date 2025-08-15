@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mastering Social Media Management: A Complete Guide</title>
+  <meta name="description" content="Learn social media management: strategy, content, scheduling, engagement, analytics, and the best tools for 2025. A complete, visual guide for brands and creators." />
+  <meta name="keywords" content="social media management, social media strategy 2025, best social media tools, how to manage social media, grow on Instagram and TikTok" />
+  <link rel="canonical" href="https://example.com/mastering-social-media-management" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Mastering Social Media Management: A Complete Guide" />
+  <meta property="og:description" content="Actionable strategies, tools, and templates to master social media management in 2025." />
+  <meta property="og:url" content="https://example.com/mastering-social-media-management" />
+  <meta property="og:image" content="https://example.com/og-social-media-management.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root{
+      --bg:#071029; --surface:#0f1724; --surface-2:#0b1322; --text:#eef6ff; --muted:#a9b3cc; --brand:#7dd3fc; --accent:#60a5fa; --accent-2:#a78bfa; --radius:16px; --maxw:1200px; --shadow:0 14px 40px rgba(2,6,23,.6);
+    }
+    @media (prefers-color-scheme: light){
+      :root{--bg:#f7fbff; --surface:#ffffff; --surface-2:#f3f7ff; --text:#0b1220; --muted:#4b5563; --shadow:0 12px 30px rgba(2,6,23,.06)}
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0; font:16px/1.75 Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:var(--text); background:radial-gradient(60vw 45vh at 10% -10%, rgba(122,120,255,.08), transparent), linear-gradient(180deg,var(--bg), #041025)}
+    a{color:var(--accent)}
+    img{max-width:100%; height:auto; border-radius:12px}
+    .wrap{max-width:var(--maxw); margin-inline:auto; padding:clamp(16px,3vw,32px)}
+
+    /* Hero */
+    header.hero{padding:clamp(36px,6vw,72px) 0 22px}
+    .hero-card{background:linear-gradient(135deg, rgba(125,211,252,.08), rgba(167,139,250,.06)); border-radius:calc(var(--radius) + 6px); padding:clamp(20px,3vw,36px); border:1px solid rgba(255,255,255,.04); box-shadow:var(--shadow)}
+    .badge{display:inline-flex; gap:.5rem; align-items:center; padding:8px 12px; border-radius:999px; background:var(--surface); border:1px solid rgba(255,255,255,.06); font-weight:700}
+    h1{font-size:clamp(28px,4.6vw,48px); margin:12px 0}
+    .sub{color:var(--muted)}
+    .kpis{display:grid; gap:12px; margin-top:14px}
+    @media(min-width:740px){.kpis{grid-template-columns:repeat(3,1fr)}}
+    .kpi{background:var(--surface); border-radius:12px; padding:12px; border:1px solid rgba(255,255,255,.04); text-align:center}
+    .kpi .big{font-weight:800; font-size:20px}
+    .kpi .label{color:var(--muted); font-size:13px}
+
+    /* Layout */
+    main.grid{display:grid; gap:24px}
+    @media(min-width:1020px){main.grid{grid-template-columns:300px 1fr}}
+    .panel{background:var(--surface); border-radius:var(--radius); padding:18px; border:1px solid rgba(255,255,255,.04); box-shadow:var(--shadow)}
+
+    /* TOC */
+    .toc h2{font-size:13px; text-transform:uppercase; color:var(--muted); letter-spacing:.12em; margin:0 0 10px}
+    .toc a{display:block; padding:10px; border-radius:10px; color:var(--text); text-decoration:none}
+    .toc a:hover{background:var(--surface-2)}
+    .toc a.active{background:linear-gradient(90deg, rgba(96,165,250,.06), rgba(167,139,250,.06))}
+
+    /* Content */
+    article h2{font-size:clamp(20px,3vw,28px); margin:22px 0 10px}
+    article h3{font-size:clamp(16px,2.4vw,20px); margin:16px 0 8px}
+    article p{margin:10px 0}
+    ul{margin:8px 0 14px 1.1rem}
+    li{margin:6px 0}
+    .muted{color:var(--muted)}
+
+    .callout{display:flex; gap:12px; align-items:flex-start; padding:14px; border-radius:12px; background:var(--surface-2); border:1px dashed rgba(255,255,255,.04)}
+
+    .cards{display:grid; gap:14px}
+    @media(min-width:720px){.cards{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1080px){.cards{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--surface); padding:14px; border-radius:12px; border:1px solid rgba(255,255,255,.03)}
+
+    .cta{display:flex; gap:12px; align-items:center; justify-content:space-between; padding:14px; border-radius:12px; background:linear-gradient(90deg, rgba(125,211,252,.06), rgba(167,139,250,.06)); border:1px solid rgba(255,255,255,.04)}
+    .btn{background:var(--accent); color:#fff; border:0; padding:10px 14px; border-radius:10px; font-weight:700; cursor:pointer}
+    .btn.secondary{background:transparent; border:1px solid rgba(255,255,255,.06); color:var(--text)}
+    .input{background:var(--surface-2); border:1px solid rgba(255,255,255,.04); padding:10px 12px; border-radius:10px; color:var(--text)}
+
+    .faq details{background:var(--surface-2); padding:12px; border-radius:10px}
+    .faq details + details{margin-top:10px}
+    .faq summary{cursor:pointer; font-weight:700}
+
+    .tags{display:flex; flex-wrap:wrap}
+    .tag{background:var(--surface-2); border-radius:999px; padding:6px 10px; margin:4px; font-size:13px; border:1px solid rgba(255,255,255,.03)}
+
+    @media print{.toc{display:none} body{background:#fff} .panel{box-shadow:none}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-card">
+      <span class="badge" aria-label="Topic: Social Media">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14h-2v-6h2v6zm0-8h-2V6h2v2z"/></svg>
+        Social Media Mastery
+      </span>
+      <h1>Mastering Social Media Management: A Complete Guide</h1>
+      <p class="sub">Strategies, tools, templates, and practical tips to grow your brand, boost engagement, and measure results in 2025.</p>
+      <div class="kpis">
+        <div class="kpi"><div class="big" id="reading-time">8–10 min</div><div class="label muted">Estimated read</div></div>
+        <div class="kpi"><div class="big">Beginner → Pro</div><div class="label muted">Level</div></div>
+        <div class="kpi"><div class="big">Updated</div><div class="label muted"><time datetime="2025-08-15">Aug 15, 2025</time></div></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap grid" id="main">
+    <nav class="toc panel" aria-label="On this page">
+      <h2>Contents</h2>
+      <a href="#why">Why social media matters</a>
+      <a href="#what">What is social media management</a>
+      <a href="#pillars">Key pillars</a>
+      <a href="#tools">Top tools (2025)</a>
+      <a href="#mistakes">Common mistakes</a>
+      <a href="#protips">Pro tips</a>
+      <a href="#workflow">Sample workflow & templates</a>
+      <a href="#faq">FAQ</a>
+      <a href="#seo">SEO keywords</a>
+    </nav>
+
+    <article class="panel" itemscope itemtype="https://schema.org/Article">
+      <meta itemprop="author" content="Editorial Team" />
+      <meta itemprop="headline" content="Mastering Social Media Management: A Complete Guide" />
+      <meta itemprop="datePublished" content="2025-08-15" />
+      <meta itemprop="dateModified" content="2025-08-15" />
+
+      <section id="why" aria-labelledby="why-h">
+        <h2 id="why-h">1) Introduction: Why Social Media Management Matters</h2>
+        <p>Social media is often the first place people discover a brand. Effective management turns passive followers into loyal customers, amplifies reach, and builds community. It’s where storytelling meets measurable marketing.</p>
+        <div class="callout">
+          <div class="icon" aria-hidden="true">💡</div>
+          <div><strong>Snapshot:</strong> Brands that post consistently and engage see higher organic reach and conversion rates—quality + consistency beats frequency without strategy.</div>
+        </div>
+      </section>
+
+      <section id="what" aria-labelledby="what-h">
+        <h2 id="what-h">2) What Is Social Media Management?</h2>
+        <p>Social media management covers planning content, creating assets, scheduling posts, replying to audiences, running ads, and analyzing performance. It's both creative and analytical—mixing storytelling with KPIs.</p>
+      </section>
+
+      <section id="pillars" aria-labelledby="pillars-h">
+        <h2 id="pillars-h">3) Key Pillars of Social Media Mastery</h2>
+        <ol>
+          <li><strong>Strategy:</strong> Define goals, audiences, and platform mix.</li>
+          <li><strong>Content Creation:</strong> Templates, brand voice, and repurposing playbooks.</li>
+          <li><strong>Scheduling & Automation:</strong> Tools to plan and optimize posting cadence.</li>
+          <li><strong>Engagement:</strong> Community management and collaboration.</li>
+          <li><strong>Analytics:</strong> Measure ROI, A/B test, and iterate.</li>
+        </ol>
+      </section>
+
+      <section id="tools" aria-labelledby="tools-h">
+        <h2 id="tools-h">4) Top Tools for 2025</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Canva Pro</h3>
+            <p>Fast graphics, templates, and short video creation—essential for non‑designers.</p>
+          </div>
+          <div class="card">
+            <h3>Later / Buffer</h3>
+            <p>Scheduling, visual planning, and best time recommendations across platforms.</p>
+          </div>
+          <div class="card">
+            <h3>Sprout Social</h3>
+            <p>Advanced social listening, reporting, and team workflows for mid‑to‑large brands.</p>
+          </div>
+          <div class="card">
+            <h3>CapCut</h3>
+            <p>Quick and powerful mobile/desktop video editing tailored to Reels and TikTok formats.</p>
+          </div>
+          <div class="card">
+            <h3>Notion</h3>
+            <p>Campaign planning, content calendars, asset tracking, and SOPs in one workspace.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="mistakes" aria-labelledby="mistakes-h">
+        <h2 id="mistakes-h">5) Common Mistakes to Avoid</h2>
+        <ul>
+          <li>Posting without a documented strategy.</li>
+          <li>Ignoring comments and DMs—audience builds loyalty.</li>
+          <li>Over‑reliance on trends without brand fit.</li>
+          <li>Neglecting performance data and learning from it.</li>
+        </ul>
+      </section>
+
+      <section id="protips" aria-labelledby="protips-h">
+        <h2 id="protips-h">6) Pro Tips to Level Up</h2>
+        <ul>
+          <li><strong>Batch create:</strong> Shoot multiple pieces in one session to save time.</li>
+          <li><strong>Repurpose:</strong> Turn long videos into clips, carousels, and stories.</li>
+          <li><strong>First 3 seconds matter:</strong> Hook your audience immediately on short‑form video.</li>
+          <li><strong>Set guardrails:</strong> Brand voice guidelines make collaborations consistent.</li>
+        </ul>
+      </section>
+
+      <section id="workflow" aria-labelledby="workflow-h">
+        <h2 id="workflow-h">7) Sample Workflow & Templates</h2>
+        <p>Here’s a lean weekly workflow for a small brand:</p>
+        <ol>
+          <li><strong>Monday:</strong> Content planning + batch shoot.</li>
+          <li><strong>Tuesday:</strong> Edit assets + captions.</li>
+          <li><strong>Wednesday:</strong> Schedule posts + stories.</li>
+          <li><strong>Thursday:</strong> Community engagement + respond to comments.</li>
+          <li><strong>Friday:</strong> Analyze weekly metrics + iterate.</li>
+        </ol>
+        <div class="cta" role="complementary">
+          <p style="margin:0"><strong>Free template:</strong> Get our "7‑day social media checklist" to run this workflow smoothly.</p>
+          <form onsubmit="event.preventDefault(); alert('Thanks — connect this to your email tool to deliver the template.')" style="display:flex; gap:10px; flex-wrap:wrap; align-items:center">
+            <input class="input" type="email" placeholder="you@business.com" required />
+            <button class="btn" type="submit">Send the template</button>
+            <button class="btn secondary" type="button" onclick="window.scrollTo({top:0, behavior:'smooth'})">Back to top</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="faq" class="faq" aria-labelledby="faq-h">
+        <h2 id="faq-h">8) Frequently Asked Questions</h2>
+        <details>
+          <summary>How often should I post?</summary>
+          <p>Quality over quantity. Start with 3–4 meaningful posts per week and supplement with stories or short videos daily if possible.</p>
+        </details>
+        <details>
+          <summary>Which platforms should I choose?</summary>
+          <p>Pick platforms where your audience spends time. For B2B, prioritize LinkedIn; for lifestyle and e‑commerce, focus on Instagram and TikTok.</p>
+        </details>
+        <details>
+          <summary>Do I need to run ads?</summary>
+          <p>Organic is powerful, but ads accelerate growth and are essential for targeted conversions—test with small budgets first.</p>
+        </details>
+      </section>
+
+      <section id="seo" aria-labelledby="seo-h">
+        <h2 id="seo-h" class="sr-only">SEO Keywords</h2>
+        <div class="tags">
+          <span class="tag">Social media management</span>
+          <span class="tag">Social media strategy 2025</span>
+          <span class="tag">Best social media tools</span>
+          <span class="tag">Content calendar template</span>
+          <span class="tag">Grow on Instagram</span>
+        </div>
+      </section>
+
+      <footer style="margin-top:28px; border-top:1px solid rgba(255,255,255,.04); padding-top:14px">
+        <p class="muted">Written by Editorial Team • Updated <time datetime="2025-08-15">August 15, 2025</time></p>
+      </footer>
+    </article>
+  </main>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Mastering Social Media Management: A Complete Guide",
+    "author":{"@type":"Organization","name":"Editorial Team"},
+    "datePublished":"2025-08-15",
+    "dateModified":"2025-08-15",
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://example.com/mastering-social-media-management"},
+    "keywords":["social media management","social media strategy 2025","best social media tools","content calendar template"]
+  }
+  </script>
+
+  <script>
+    // TOC active state
+    const anchors = document.querySelectorAll('.toc a');
+    const sections = [...anchors].map(a => document.querySelector(a.getAttribute('href')));
+    const activate = () => {
+      let idx = sections.findIndex(sec => sec.getBoundingClientRect().top - 140 > 0) - 1;
+      if(idx < 0) idx = sections.length - 1;
+      anchors.forEach(a => a.classList.remove('active'));
+      if(anchors[idx]) anchors[idx].classList.add('active');
+    };
+    document.addEventListener('scroll', activate, {passive:true});
+    window.addEventListener('load', activate);
+
+    // Reading time estimate
+    const text = document.querySelector('article')?.innerText || '';
+    const words = text.trim().split(/\s+/).length;
+    const mins = Math.max(4, Math.round(words / 200));
+    const rt = document.getElementById('reading-time');
+    if(rt) rt.textContent = mins + ' min read';
+  </script>
+</body>
+</html>

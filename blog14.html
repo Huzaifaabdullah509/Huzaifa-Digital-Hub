@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Investing 101: A Beginner’s Guide (Full Visual, SEO-Optimized)</title>
+  <meta name="description" content="A clean, visual, and practical beginner’s guide to investing: core principles, asset types, and a step‑by‑step plan to start building wealth confidently." />
+  <meta name="keywords" content="investing 101, beginner investing, how to start investing, ETFs, stocks vs bonds, diversification, personal finance" />
+  <link rel="canonical" href="https://example.com/investing-101" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Investing 101: A Beginner’s Guide" />
+  <meta property="og:description" content="The essentials of investing for beginners, with visuals and a step-by-step plan." />
+  <meta property="og:url" content="https://example.com/investing-101" />
+  <meta property="og:image" content="https://example.com/og-investing-101.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root{
+      /* Brandable palette */
+      --bg: #0b1220;             /* page bg */
+      --bg-accent: #0f1730;
+      --surface: #10182b;        /* card bg */
+      --surface-2: #0c1426;      /* subtle bg */
+      --text: #ecf0ff;           /* main text */
+      --muted: #b7bed9;          /* secondary text */
+      --brand: #86efac;          /* green */
+      --brand-2: #60a5fa;        /* blue */
+      --accent: #fcd34d;         /* amber */
+      --danger: #f87171;         /* red */
+      --radius: 18px;
+      --shadow: 0 12px 40px rgba(0,0,0,.35);
+      --maxw: 1160px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg: #f7f9ff;
+        --bg-accent: #eef2ff;
+        --surface: #ffffff;
+        --surface-2: #f3f6ff;
+        --text: #0f172a;
+        --muted: #475569;
+        --shadow: 0 12px 40px rgba(15, 23, 42, .08);
+      }
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font: 16px/1.7 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text); background:
+        radial-gradient(90vw 60vh at 10% -10%, rgba(96,165,250,.18), transparent 50%),
+        radial-gradient(60vw 50vh at 100% -20%, rgba(134,239,172,.22), transparent 55%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-accent) 100%);
+    }
+    img{max-width:100%; height:auto; border-radius:var(--radius)}
+    a{color:var(--brand-2); text-underline-offset: 3px}
+
+    .wrap{max-width:var(--maxw); margin-inline:auto; padding: clamp(16px, 3vw, 28px)}
+
+    /* ===== Hero ===== */
+    header.hero{padding: clamp(40px, 7vw, 80px) 0 20px; position:relative}
+    .hero-card{
+      background: linear-gradient(120deg, rgba(96,165,250,.12), rgba(134,239,172,.12));
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: calc(var(--radius) + 8px);
+      padding: clamp(20px, 3vw, 36px);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(6px);
+    }
+    .badge{display:inline-flex; gap:.5rem; align-items:center; padding:8px 12px; border:1px solid rgba(255,255,255,.12); border-radius:999px; background:var(--surface); font-weight:700}
+    h1{font-size: clamp(32px, 5.2vw, 56px); line-height:1.1; margin: 14px 0 10px}
+    .sub{color:var(--muted); font-size: clamp(16px, 2.2vw, 20px)}
+
+    .kpis{display:grid; gap:12px; margin-top:14px}
+    @media(min-width:740px){.kpis{grid-template-columns: repeat(3, 1fr)}}
+    .kpi{background:var(--surface); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:14px; text-align:center}
+    .kpi .big{font-size: clamp(22px, 3vw, 30px); font-weight:800}
+    .kpi .label{color:var(--muted); font-size:13px}
+
+    /* ===== Layout ===== */
+    main.grid{display:grid; gap:24px}
+    @media(min-width:1000px){ main.grid{grid-template-columns: 280px 1fr} }
+    .panel{background:var(--surface); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); padding:clamp(18px, 2vw, 24px); box-shadow:var(--shadow)}
+
+    /* ===== TOC ===== */
+    .toc h2{font-size:14px; text-transform:uppercase; letter-spacing:.14em; color:var(--muted); margin:0 0 10px}
+    .toc a{display:block; padding:10px 12px; border-radius:12px; color:var(--text); text-decoration:none; border:1px solid transparent}
+    .toc a:hover{background:var(--surface-2); border-color: rgba(255,255,255,.08)}
+    .toc a.active{background:linear-gradient(120deg, rgba(96,165,250,.18), rgba(134,239,172,.18)); border-color: rgba(255,255,255,.2)}
+
+    /* ===== Article typography ===== */
+    article h2{font-size: clamp(22px, 3vw, 32px); margin: 28px 0 10px}
+    article h3{font-size: clamp(18px, 2.4vw, 24px); margin: 18px 0 8px}
+    article p{margin: 10px 0}
+    article ul{margin: 8px 0 14px 0; padding-left: 1.1rem}
+    article li{margin:6px 0}
+    .muted{color:var(--muted)}
+
+    .callout{display:flex; gap:14px; align-items:flex-start; padding:14px 16px; border-radius:14px; border:1px dashed rgba(255,255,255,.18); background:var(--surface-2)}
+    .callout .icon{flex:0 0 auto}
+
+    /* Cards */
+    .cards{display:grid; gap:16px}
+    @media(min-width:720px){.cards{grid-template-columns: repeat(2, 1fr)}}
+    @media(min-width:1080px){.cards{grid-template-columns: repeat(3, 1fr)}}
+    .card{background:var(--surface); border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:16px; transition: transform .2s ease, box-shadow .2s ease}
+    .card:hover{transform:translateY(-4px); box-shadow: var(--shadow)}
+
+    /* Comparison table */
+    .table-wrap{overflow:auto}
+    table{width:100%; border-collapse:separate; border-spacing:0; min-width:720px}
+    th, td{padding:12px 14px; border-bottom:1px solid rgba(255,255,255,.08); text-align:left}
+    thead th{position:sticky; top:0; background:var(--surface-2)}
+
+    .cta{display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; background: linear-gradient(120deg, rgba(134,239,172,.15), rgba(96,165,250,.15)); border:1px solid rgba(255,255,255,.12); padding:16px; border-radius:16px}
+    .btn{appearance:none; border:1px solid rgba(255,255,255,.2); background:var(--brand-2); color:#fff; padding:10px 14px; border-radius:12px; font-weight:700; cursor:pointer}
+    .btn.secondary{background:transparent; color:var(--text)}
+    .input{background:var(--surface); border:1px solid rgba(255,255,255,.14); border-radius:12px; padding:10px 12px; color:var(--text)}
+
+    /* FAQ */
+    .faq details{background:var(--surface); border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:14px 16px}
+    .faq details + details{margin-top:12px}
+    .faq summary{cursor:pointer; font-weight:700}
+
+    /* Print */
+    @media print{ .toc{display:none} body{background:#fff} header.hero{padding:0} .panel, .card{box-shadow:none} a{color:inherit} }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-card">
+      <span class="badge" aria-label="Category: Investing">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M3 3h2v18H3zM8 13h2v8H8zM13 9h2v12h-2zM18 5h2v16h-2z"/></svg>
+        Investing 101
+      </span>
+      <h1>Investing 101: A Beginner’s Guide to Building Wealth</h1>
+      <p class="sub">Start smart: learn core principles, compare asset types, and follow a step‑by‑step plan to invest with confidence.</p>
+      <div class="kpis" aria-label="Quick facts">
+        <div class="kpi"><div class="big" id="reading-time">8–10 min</div><div class="label">Reading time</div></div>
+        <div class="kpi"><div class="big">Beginner</div><div class="label">Difficulty</div></div>
+        <div class="kpi"><div class="big">Updated</div><div class="label"><time datetime="2025-08-15">Aug 15, 2025</time></div></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap grid" id="main">
+    <!-- TOC -->
+    <nav class="toc panel" aria-label="On this page">
+      <h2>Contents</h2>
+      <a href="#intro">Why investing matters</a>
+      <a href="#basics">Core principles</a>
+      <a href="#types">Asset types</a>
+      <a href="#compare">Stocks vs. Bonds vs. ETFs</a>
+      <a href="#start">How to start (step‑by‑step)</a>
+      <a href="#mistakes">Common mistakes</a>
+      <a href="#tips">Smart tips</a>
+      <a href="#faq">FAQ</a>
+      <a href="#seo">SEO keywords</a>
+    </nav>
+
+    <!-- Article -->
+    <article class="panel" itemscope itemtype="https://schema.org/Article">
+      <meta itemprop="author" content="Editorial Team" />
+      <meta itemprop="headline" content="Investing 101: A Beginner’s Guide to Building Wealth" />
+      <meta itemprop="datePublished" content="2025-08-15" />
+      <meta itemprop="dateModified" content="2025-08-15" />
+
+      <section id="intro" aria-labelledby="intro-h">
+        <h2 id="intro-h">1) Why Investing Matters</h2>
+        <p>Saving alone rarely beats inflation. <strong>Investing</strong> puts your money to work through compounding and asset growth so you can reach goals like <em>retirement, education, a home,</em> or <em>financial freedom</em>.</p>
+        <div class="callout" role="note">
+          <div class="icon" aria-hidden="true">💡</div>
+          <div>
+            <strong>Quick math:</strong> Invest $500/month at 7% annually and you could reach about <em>$600,000</em> in 30 years thanks to compound returns.
+          </div>
+        </div>
+      </section>
+
+      <section id="basics" aria-labelledby="basics-h">
+        <h2 id="basics-h">2) Core Principles</h2>
+        <ul>
+          <li><strong>Risk vs. reward:</strong> Higher returns typically come with greater volatility.</li>
+          <li><strong>Diversification:</strong> Spread across assets to lower risk.</li>
+          <li><strong>Time horizon:</strong> More time = more compounding and recovery from dips.</li>
+          <li><strong>Liquidity:</strong> How fast you can convert to cash without major loss.</li>
+        </ul>
+      </section>
+
+      <section id="types" aria-labelledby="types-h">
+        <h2 id="types-h">3) Asset Types for Beginners</h2>
+        <div class="cards" role="list">
+          <div class="card" role="listitem">
+            <h3>A) Stocks</h3>
+            <p>Ownership in companies; higher long‑term return potential with more ups and downs.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>B) Bonds</h3>
+            <p>Loans to governments/companies; steadier income and lower volatility than stocks.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>C) ETFs & Mutual Funds</h3>
+            <p>Bundles of assets that offer instant diversification; many track indexes at low cost.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>D) Real Estate / REITs</h3>
+            <p>Property exposure for income and appreciation; REITs provide hands‑off access.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>E) Cash & CDs</h3>
+            <p>Capital preservation and liquidity; limited growth, best for short‑term goals.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="compare" aria-labelledby="compare-h">
+        <h2 id="compare-h">4) Compare: Stocks vs. Bonds vs. ETFs</h2>
+        <div class="table-wrap" role="region" aria-label="Comparison table">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Stocks</th>
+                <th>Bonds</th>
+                <th>ETFs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>What it is</td>
+                <td>Company ownership</td>
+                <td>Debt you lend for interest</td>
+                <td>Basket of assets (often index)</td>
+              </tr>
+              <tr>
+                <td>Risk/Volatility</td>
+                <td>Higher</td>
+                <td>Lower–Medium</td>
+                <td>Varies by index/theme</td>
+              </tr>
+              <tr>
+                <td>Income potential</td>
+                <td>Dividends (not guaranteed)</td>
+                <td>Coupon interest</td>
+                <td>Depends on holdings</td>
+              </tr>
+              <tr>
+                <td>Diversification</td>
+                <td>Low (single company)</td>
+                <td>Low–Medium</td>
+                <td>High (broad exposure)</td>
+              </tr>
+              <tr>
+                <td>Who it suits</td>
+                <td>Growth‑seeking investors</td>
+                <td>Stability/income seekers</td>
+                <td>Most beginners</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="start" aria-labelledby="start-h">
+        <h2 id="start-h">5) How to Start: Step‑by‑Step</h2>
+        <ol>
+          <li><strong>Define goals:</strong> Retirement, home, education, or financial freedom.</li>
+          <li><strong>Emergency fund:</strong> 3–6 months’ expenses in an accessible account.</li>
+          <li><strong>Choose an account:</strong> Brokerage for flexibility; tax‑advantaged accounts for retirement (or local equivalents).</li>
+          <li><strong>Pick a simple mix:</strong> A broad‑market stock ETF + bond fund fits many beginners.</li>
+          <li><strong>Automate & rebalance:</strong> Auto‑invest monthly; review and rebalance yearly.</li>
+        </ol>
+        <div class="cta" role="complementary">
+          <p style="margin:0"><strong>Pro tip:</strong> Start with a 80/20 or 70/30 stock‑to‑bond split if you have a long time horizon, then adjust as goals near.</p>
+          <button class="btn" onclick="alert('Nice! Add your real CTA action here.')">Start a $50 Auto‑Invest</button>
+        </div>
+      </section>
+
+      <section id="mistakes" aria-labelledby="mistakes-h">
+        <h2 id="mistakes-h">6) Common Beginner Mistakes</h2>
+        <ul>
+          <li>Chasing trending stocks without a plan.</li>
+          <li>Ignoring fees and taxes that lower returns.</li>
+          <li>Panic‑selling during normal market dips.</li>
+          <li>Lack of diversification.</li>
+        </ul>
+      </section>
+
+      <section id="tips" aria-labelledby="tips-h">
+        <h2 id="tips-h">7) Smart Tips</h2>
+        <ul>
+          <li><strong>Start early:</strong> Time in market > timing the market.</li>
+          <li><strong>Reinvest dividends:</strong> Compounding accelerates growth.</li>
+          <li><strong>Automate contributions:</strong> Make it a habit.</li>
+          <li><strong>Keep learning:</strong> Track and iterate.</li>
+        </ul>
+        <form class="cta" aria-label="Subscribe for updates" onsubmit="event.preventDefault(); alert('Thanks for subscribing! (Wire up to your email tool)')">
+          <label for="email" style="font-weight:700">Free checklist: "Your First Investment in 7 Steps"</label>
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <input id="email" class="input" type="email" placeholder="you@example.com" required />
+            <button class="btn" type="submit">Get the checklist</button>
+            <button class="btn secondary" type="button" onclick="window.scrollTo({top:0, behavior:'smooth'})">Back to top</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="faq" class="faq" aria-labelledby="faq-h">
+        <h2 id="faq-h">8) FAQ</h2>
+        <details>
+          <summary>How much do I need to start?</summary>
+          <p>With fractional shares, even $50–$100/month is enough to build momentum—consistency beats size early on.</p>
+        </details>
+        <details>
+          <summary>Is investing risky?</summary>
+          <p>Yes, but you can manage risk by diversifying and aligning your asset mix to your time horizon and goals.</p>
+        </details>
+        <details>
+          <summary>Do I need a financial advisor?</summary>
+          <p>If your situation is complex, consider a fiduciary advisor. Otherwise, broad index funds are a low‑cost starting point.</p>
+        </details>
+      </section>
+
+      <section id="seo" aria-labelledby="seo-h">
+        <h2 id="seo-h" class="sr-only">SEO Keywords</h2>
+        <p class="muted" aria-label="SEO keywords">
+          <span style="display:inline-block;margin:3px 6px 0 0" class="badge">Beginner investing</span>
+          <span style="display:inline-block;margin:3px 6px 0 0" class="badge">How to start investing</span>
+          <span style="display:inline-block;margin:3px 6px 0 0" class="badge">Stocks vs bonds</span>
+          <span style="display:inline-block;margin:3px 6px 0 0" class="badge">ETF basics</span>
+          <span style="display:inline-block;margin:3px 6px 0 0" class="badge">Diversification</span>
+        </p>
+      </section>
+
+      <footer style="margin-top:30px; border-top:1px solid rgba(255,255,255,.08); padding-top:16px">
+        <p class="muted">Written by Editorial Team • Updated <time datetime="2025-08-15">August 15, 2025</time></p>
+      </footer>
+    </article>
+  </main>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Investing 101: A Beginner’s Guide to Building Wealth",
+    "author": {"@type": "Organization", "name": "Editorial Team"},
+    "datePublished": "2025-08-15",
+    "dateModified": "2025-08-15",
+    "mainEntityOfPage": {"@type":"WebPage","@id":"https://example.com/investing-101"},
+    "about": ["Investing", "Personal Finance", "Beginner Guide"],
+    "keywords": ["investing 101","beginner investing","how to start investing","ETF basics","stocks vs bonds"]
+  }
+  </script>
+
+  <script>
+    // Activate current TOC link
+    const anchors = document.querySelectorAll('.toc a');
+    const sections = [...anchors].map(a => document.querySelector(a.getAttribute('href')));
+    const activate = () => {
+      let idx = sections.findIndex(sec => sec.getBoundingClientRect().top - 130 > 0) - 1;
+      if(idx < 0) idx = sections.length - 1;
+      anchors.forEach(a => a.classList.remove('active'));
+      if(anchors[idx]) anchors[idx].classList.add('active');
+    };
+    document.addEventListener('scroll', activate, {passive:true});
+    window.addEventListener('load', activate);
+
+    // Reading time (200 wpm)
+    const text = document.querySelector('article')?.innerText || '';
+    const words = text.trim().split(/\s+/).length;
+    const mins = Math.max(5, Math.round(words / 200));
+    const rt = document.getElementById('reading-time');
+    if(rt) rt.textContent = mins + ' min read';
+  </script>
+</body>
+</html>
