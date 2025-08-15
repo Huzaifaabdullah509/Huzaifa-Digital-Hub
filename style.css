@@ -216,7 +216,7 @@ section p {
 /* Form Inputs */
 .contact-box input,
 .contact-box textarea {
-    width: 100%;
+    width: 40%;
     padding: 14px;
     margin-bottom: 15px;
     border: none;
@@ -311,5 +311,6 @@ footer a:hover {
     margin: 5px 0;
   }
 }
+
 
 
